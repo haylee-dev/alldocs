@@ -48,6 +48,7 @@ type ItemCard struct {
 	ItemTitleUrl        string   `bson:"item_title_url,omitempty" json:"item_title_url"`
 	ItemSubTitle        string   `bson:"item_subtitle,omitempty" json:"item_subtitle,omitempty"`
 	ItemPrice           string   `bson:"item_price,omitempty" json:"item_price"`
+	ItemLocation        string   `bson:"item_location,omitempty" json:"item_location"`
 	ItemShipping        string   `bson:"item_shipping,omitempty" json:"item_shipping"`
 	ItemShipsTo         []string `bson:"item_ships_to,omitempty" json:"item_ships_to"`
 	ItemCountry         string   `bson:"item_country,omitempty" json:"item_country"`
