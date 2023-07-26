@@ -264,12 +264,13 @@ type SearchAlias struct {
 }
 type SellerInfo struct {
 	UserName                string `bson:"user_name,omitempty" json:"user_name"`
-	SellerUserName          string `bson:"seller_username,omitempty" json:"seller_username"`
+	SellerUserName          string `bson:"seller_user_name,omitempty" json:"seller_user_name"`
 	FeedbackRatingStar      string `bson:"feedback_rating_star,omitempty" json:"feedback_rating_star"`
 	FeedbackScore           string `bson:"feedback_score,omitempty" json:"feedback_score"`
 	PositiveFeedbackPercent string `bson:"positive_feedback_percent,omitempty" json:"positive_feedback_percent"`
 	TopRatedSeller          string `bson:"top_rated_seller,omitempty" json:"top_rated_seller"`
 	SellerLogo              string `bson:"seller_logo" json:"seller_logo"`
+	UserNameLogo            string `bson:"user_name_logo" json:"user_name_logo"`
 }
 type ShippingInfo struct {
 	ShipsTo                 []string `bson:"ships_to,omitempty" json:"ships_to"`
@@ -321,6 +322,7 @@ type UpdatedDocInfo struct {
 	UpdatedItemNameLong bool `bson:"updated_itemname_long,omitempty" json:"updated_itemname_long"`
 	UpdatedMake         bool `bson:"updated_make,omitempty" json:"updated_make"`
 	UpdatedModel        bool `bson:"updated_model,omitempty" json:"updated_model"`
+	UpdatedCompleted    bool `bson:"updated_completed,omitempty" json:"updated_completed"`
 }
 
 //type VideoInfo struct {
