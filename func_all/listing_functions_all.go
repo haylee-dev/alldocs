@@ -6,55 +6,6 @@ import (
 	"strings"
 )
 
-func GetSortOrder(sort_order string) string {
-	SortOrder := ""
-
-	/*
-		'BestMatch' => 'Best Match',
-		'BidCountFewest' => 'Bid Count Fewest',
-		'BidCountMost' => 'Bid Count Most',
-		'CountryAscending' => 'Country Ascending',
-		'CountryDescending' => 'Country Descending',
-		'CurrentPriceHighest' => 'Current Highest Price',
-		'DistanceNearest' => 'Nearest Distance',
-		'EndTimeSoonest' => 'End Time Soonest',
-		'PricePlusShippingHighest' => 'Price Plus Shipping Highest',
-		'PricePlusShippingLowest' => 'Price Plus Shipping Lowest',
-		'StartTimeNewest' => 'Start Time Newest'
-	*/
-
-	if sort_order == "best-match" {
-		SortOrder = "BestMatch"
-	}
-	if sort_order == "bid-count-fewest" {
-		SortOrder = "BidCountFewest"
-	}
-	if sort_order == "bid-count-most" {
-		SortOrder = "BidCountMost"
-	}
-	if sort_order == "country-ascending" {
-		SortOrder = "CountryAscending"
-	}
-	if sort_order == "country-descending" {
-		SortOrder = "CountryDescending"
-	}
-	if sort_order == "current-price-highest" {
-		SortOrder = "CurrentPriceHighest"
-	}
-	if sort_order == "end-time-soonest" {
-		SortOrder = "EndTimeSoonest"
-	}
-	if sort_order == "price-plus-shipping-highest" {
-		SortOrder = "PricePlusShippingHighest"
-	}
-	if sort_order == "price-plus-shipping-lowest" {
-		SortOrder = "PricePlusShippingLowest"
-	}
-	if sort_order == "start-time-newest" {
-		SortOrder = "StartTimeNewest"
-	}
-	return SortOrder
-}
 func CleanTitleForUrl(title string) string {
 	titleurl0 := strings.Replace(title, "/", "-", -1)
 	titleurl1 := strings.Replace(titleurl0, " ", "-", -1)
@@ -241,41 +192,6 @@ func SetSizeFromTitle(title string) string {
 	color.Cyan.Println(ItemSize)
 
 	return ItemSize
-}
-func SetConditionString(conditionid string) string {
-	conditionStr := ""
-	if conditionid == "1000" {
-		conditionStr = "new"
-	} else if conditionid == "3000" {
-		conditionStr = "used"
-	} else if conditionid == "4000" {
-		conditionStr = "very-good"
-	} else if conditionid == "5000" {
-		conditionStr = "good"
-	} else if conditionid == "7000" {
-		conditionStr = "for-parts-only"
-	} else if conditionid == "1500" {
-		conditionStr = "new-other"
-	} else if conditionid == "1750" {
-		conditionStr = "new-with-defects"
-	} else if conditionid == "2000" {
-		conditionStr = "cert-refurbished"
-	} else if conditionid == "2010" {
-		conditionStr = "excellent-refurb"
-	} else if conditionid == "2020" {
-		conditionStr = "very-good-refurb"
-	} else if conditionid == "2030" {
-		conditionStr = "good-refurb"
-	} else if conditionid == "2050" {
-		conditionStr = "seller-refurb"
-	} else if conditionid == "2750" {
-		conditionStr = "like-new"
-	} else if conditionid == "6000" {
-		conditionStr = "acceptable"
-	} else {
-		conditionStr = ""
-	}
-	return conditionStr
 }
 func EncodeToString(EncStr string) string {
 	data := []byte(EncStr)
