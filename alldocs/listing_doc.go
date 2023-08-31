@@ -39,39 +39,39 @@ type ListingDoc struct {
 	PositionInfo      PositionInfo      `bson:"position_info,omitempty" json:"position_info"`
 }
 type ItemCard struct {
-	ItemName            string   `bson:"item_name,omitempty" json:"item_name,omitempty"`
-	ItemAccurateName    string   `bson:"item_long_name,omitempty" json:"item_long_name"`
-	ItemCondition       string   `bson:"item_condition,omitempty" json:"item_condition,omitempty"`
+	ItemName            string   `bson:"item_name" json:"item_name"`
+	ItemAccurateName    string   `bson:"item_long_name" json:"item_long_name"`
+	ItemCondition       string   `bson:"item_condition" json:"item_condition"`
 	ItemDescription     string   `bson:"item_description,omitempty" json:"item_description"`
-	ItemImage           string   `bson:"item_image,omitempty" json:"item_image"`
-	ItemTitle           string   `bson:"item_title,omitempty" json:"item_title"`
-	ItemTitleUrl        string   `bson:"item_title_url,omitempty" json:"item_title_url"`
+	ItemImage           string   `bson:"item_image" json:"item_image"`
+	ItemTitle           string   `bson:"item_title" json:"item_title"`
+	ItemTitleUrl        string   `bson:"item_title_url" json:"item_title_url"`
 	ItemSubTitle        string   `bson:"item_subtitle,omitempty" json:"item_subtitle,omitempty"`
-	ItemPrice           string   `bson:"item_price,omitempty" json:"item_price"`
+	ItemPrice           string   `bson:"item_price" json:"item_price"`
 	ItemLocation        string   `bson:"item_location,omitempty" json:"item_location"`
 	ItemShipping        string   `bson:"item_shipping,omitempty" json:"item_shipping"`
 	ItemShipsTo         []string `bson:"item_ships_to,omitempty" json:"item_ships_to"`
 	ItemCountry         string   `bson:"item_country,omitempty" json:"item_country"`
-	ItemCurrency        string   `bson:"item_currency,omitempty" json:"item_currency"`
-	ItemCurrencySymbol  string   `bson:"item_currency_symbol,omitempty" json:"item_currency_symbol"`
+	ItemCurrency        string   `bson:"item_currency" json:"item_currency"`
+	ItemCurrencySymbol  string   `bson:"item_currency_symbol" json:"item_currency_symbol"`
 	ItemStockStatus     string   `bson:"item_stock_status,omitempty" json:"item_stock_status"`
 	ItemSellingStatus   string   `bson:"item_selling_status,omitempty" json:"item_selling_status"`
 	ItemWebsite         string   `bson:"item_website,omitempty" json:"item_website"`
 	ItemWebsiteCode     string   `bson:"item_website_code,omitempty" json:"item_website_code"` // 3849 : ebay 4942 : amazon
-	ItemCategoryName    string   `bson:"item_category_name,omitempty" json:"item_category_name"`
-	ItemCategoryId      string   `bson:"item_category_id,omitempty" json:"item_category_id"`
+	ItemCategoryName    string   `bson:"item_category_name" json:"item_category_name"`
+	ItemCategoryId      string   `bson:"item_category_id" json:"item_category_id"`
 	ItemEndTime         string   `bson:"item_end_time,omitempty" json:"item_end_time"`
 	ItemMaterials       []string `bson:"item_materials,omitempty" json:"item_materials,omitempty"`
 	ItemMaterial        string   `bson:"item_material,omitempty" json:"item_material,omitempty"`
 	ItemColors          []string `bson:"item_colors,omitempty" json:"item_colors,omitempty"`
 	ItemColor           string   `bson:"item_color,omitempty" json:"item_color,omitempty"`
 	ItemSize            string   `bson:"item_size,omitempty" json:"item_size,omitempty"`
-	ItemSiteLink        string   `bson:"item_site_link,omitempty" json:"item_site_link,omitempty"`
+	ItemSiteLink        string   `bson:"item_site_link" json:"item_site_link"`
 	ItemManufCode       string   `bson:"item_manuf_code,omitempty" json:"item_manuf_code"`
 	ItemFamily          string   `bson:"item_family,omitempty" json:"item_family"`
 	ItemBrand           string   `bson:"item_brand,omitempty" json:"item_brand"`
 	ItemManufacturer    string   `bson:"item_manufacturer,omitempty" json:"item_manufacturer"`
-	ItemReturnsAccepted string   `bson:"item_returns_accepted,omitempty" json:"item_returns_accepted"`
+	ItemReturnsAccepted string   `bson:"item_returns_accepted" json:"item_returns_accepted"`
 	ItemSourceLink      string   `bson:"item_source_link,omitempty" json:"item_source_link"`
 	ItemWeight          string   `bson:"item_weight,omitempty" json:"item_weight"`
 	ItemModelNumber     string   `bson:"item_model_number,omitempty" json:"item_model_number"`
