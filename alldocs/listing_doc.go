@@ -146,7 +146,7 @@ type CategoryInfo struct {
 	SecondaryCategoryID   string `bson:"secondary_category_id,omitempty" json:"secondary_category_id"`
 }
 type CompatibilityInfo struct {
-	Make          string   `bson:"make,omitempty" json:"make,omitempty"`
+	Make          string   `bson:"make" json:"make"`
 	Model         string   `bson:"model,omitempty" json:"model,omitempty"`
 	YearStart     string   `bson:"year_start,omitempty" json:"year_start,omitempty"`
 	YearEnd       string   `bson:"year_end,omitempty" json:"year_end,omitempty"`
