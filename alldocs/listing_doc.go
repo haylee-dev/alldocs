@@ -54,10 +54,10 @@ type ItemCard struct {
 	ItemCountry         string   `bson:"item_country,omitempty" json:"item_country"`
 	ItemCurrency        string   `bson:"item_currency" json:"item_currency"`
 	ItemCurrencySymbol  string   `bson:"item_currency_symbol" json:"item_currency_symbol"`
-	ItemStockStatus     string   `bson:"item_stock_status,omitempty" json:"item_stock_status"`
-	ItemSellingStatus   string   `bson:"item_selling_status,omitempty" json:"item_selling_status"`
-	ItemWebsite         string   `bson:"item_website,omitempty" json:"item_website"`
-	ItemWebsiteCode     string   `bson:"item_website_code,omitempty" json:"item_website_code"` // 3849 : ebay 4942 : amazon
+	ItemStockStatus     string   `bson:"item_stock_status" json:"item_stock_status"`
+	ItemSellingStatus   string   `bson:"item_selling_status" json:"item_selling_status"`
+	ItemWebsite         string   `bson:"item_website" json:"item_website"`
+	ItemWebsiteCode     string   `bson:"item_website_code" json:"item_website_code"` // 3849 : ebay 4942 : amazon
 	ItemCategoryName    string   `bson:"item_category_name" json:"item_category_name"`
 	ItemCategoryId      string   `bson:"item_category_id" json:"item_category_id"`
 	ItemEndTime         string   `bson:"item_end_time,omitempty" json:"item_end_time"`
@@ -111,9 +111,9 @@ type AttributesInfo struct {
 	IsRetrofit     bool `bson:"is_retrofit,omitempty" json:"is_retrofit,omitempty"`
 }
 type CallInfo struct {
-	ItemName               string `bson:"item_name,omitempty" json:"item_name"`
-	Website                string `bson:"website,omitempty" json:"website"`
-	Geo                    string `bson:"geo,omitempty" json:"geo"`
+	ItemName               string `bson:"item_name" json:"item_name"`
+	Website                string `bson:"website" json:"website"`
+	Geo                    string `bson:"geo" json:"geo"`
 	AmazonCallCategoryId   string `bson:"amazon_call_category_id,omitempty" json:"amazon_call_category_id"`
 	EbayCallCategoryId     string `bson:"ebay_call_category_id,omitempty" json:"ebay_call_category_id"`
 	AmazonCallCategoryName string `bson:"amazon_call_category_name,omitempty" json:"amazon_call_category_name"`
@@ -139,15 +139,15 @@ type CategoryInfo struct {
 	SiteGlobalCategoryName string `bson:"site_global_category_name" json:"site_global_category_name"`
 	SiteGlobalCategoryID   string `bson:"site_global_category_id" json:"site_global_category_id"`
 
-	SiteSubName string `bson:"site_sub_name,omitempty" json:"site_sub_name"`
-	SiteSubID   string `bson:"site_sub_id,omitempty" json:"site_sub_id"`
+	SiteSubName string `bson:"site_sub_name" json:"site_sub_name"`
+	SiteSubID   string `bson:"site_sub_id" json:"site_sub_id"`
 
 	SecondaryCategoryName string `bson:"secondary_category_name,omitempty" json:"secondary_category_name"`
 	SecondaryCategoryID   string `bson:"secondary_category_id,omitempty" json:"secondary_category_id"`
 }
 type CompatibilityInfo struct {
 	Make          string   `bson:"make" json:"make"`
-	Model         string   `bson:"model,omitempty" json:"model,omitempty"`
+	Model         string   `bson:"model" json:"model,omitempty"`
 	YearStart     string   `bson:"year_start,omitempty" json:"year_start,omitempty"`
 	YearEnd       string   `bson:"year_end,omitempty" json:"year_end,omitempty"`
 	ValveSize     string   `bson:"valve_size,omitempty" json:"valve_size,omitempty"`
@@ -174,16 +174,16 @@ type PositionInfo struct {
 }
 type ConditionInfo struct {
 	ConditionId string `bson:"condition_id,omitempty" json:"condition_id"`
-	Condition   string `bson:"condition,omitempty" json:"condition"`
+	Condition   string `bson:"condition" json:"condition"`
 	IsExcellent bool   `bson:"is_excellent,omitempty" json:"is_excellent"`
 	IsMint      bool   `bson:"is_mint,omitempty" json:"is_mint"`
 	IsGood      bool   `bson:"is_good,omitempty" json:"is_good"`
 }
 type DomainInfo struct {
 	Name   string `bson:"name,omitempty" json:"name"`
-	Domain string `bson:"domain,omitempty" json:"domain"`
+	Domain string `bson:"domain" json:"domain"`
 	URL    string `bson:"url,omitempty" json:"url"`
-	Geo    string `bson:"geo,omitempty" json:"geo"`
+	Geo    string `bson:"geo" json:"geo"`
 }
 type EbayInfo struct {
 	IsTopRatedListing       string `bson:"is_top_rated_listing,omitempty" json:"is_top_rated_listing"`
