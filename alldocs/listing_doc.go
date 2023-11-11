@@ -322,6 +322,7 @@ type UpdatedDocInfo struct {
 	UpdatedItemNameLong bool `bson:"updated_itemname_long,omitempty" json:"updated_itemname_long"`
 	UpdatedMake         bool `bson:"updated_make,omitempty" json:"updated_make"`
 	UpdatedModel        bool `bson:"updated_model,omitempty" json:"updated_model"`
+	UpdatedSellerInfo   bool `bson:"updated_seller_info,omitempty" json:"updated_seller_info"`
 	UpdatedCompleted    bool `bson:"updated_completed,omitempty" json:"updated_completed"`
 }
 
