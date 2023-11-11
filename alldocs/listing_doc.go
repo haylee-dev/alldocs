@@ -271,6 +271,9 @@ type SellerInfo struct {
 	TopRatedSeller          string `bson:"top_rated_seller,omitempty" json:"top_rated_seller"`
 	SellerLogo              string `bson:"seller_logo" json:"seller_logo"`
 	UserNameLogo            string `bson:"user_name_logo" json:"user_name_logo"`
+	SellerCarMake           string `bson:"seller_car_make" json:"seller_car_make"`
+	SellerVraCert           string `bson:"seller_vra_cert" json:"vra_cert"`
+	SellerCertRecycled      string `bson:"seller_cert_recycled" json:"cert_recycled"`
 }
 type ShippingInfo struct {
 	ShipsTo                 []string `bson:"ships_to,omitempty" json:"ships_to"`
