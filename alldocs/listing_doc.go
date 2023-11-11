@@ -320,8 +320,8 @@ type OneStar struct {
 	Count      int `bson:"count,omitempty" json:"count"`
 }
 type UpdatedDocInfo struct {
-	UpdatedYears        bool `bson:"update_years,omitempty" json:"update_years"`
-	UpdatedCats         bool `bson:"update_cats,omitempty" json:"update_cats"`
+	UpdatedYears        bool `bson:"updated_years,omitempty" json:"update_years"`
+	UpdatedCats         bool `bson:"updated_cats,omitempty" json:"update_cats"`
 	UpdatedItemNameLong bool `bson:"updated_itemname_long,omitempty" json:"updated_itemname_long"`
 	UpdatedMake         bool `bson:"updated_make,omitempty" json:"updated_make"`
 	UpdatedModel        bool `bson:"updated_model,omitempty" json:"updated_model"`
