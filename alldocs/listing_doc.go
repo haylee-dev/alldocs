@@ -146,20 +146,21 @@ type CategoryInfo struct {
 	SecondaryCategoryID   string `bson:"secondary_category_id,omitempty" json:"secondary_category_id"`
 }
 type CompatibilityInfo struct {
-	Make          string   `bson:"make" json:"make"`
-	Model         string   `bson:"model" json:"model"`
-	Variant       string   `bson:"variant" json:"variant"`
-	YearStart     string   `bson:"year_start,omitempty" json:"year_start,omitempty"`
-	YearEnd       string   `bson:"year_end,omitempty" json:"year_end,omitempty"`
-	ValveSize     string   `bson:"valve_size,omitempty" json:"valve_size,omitempty"`
-	EngineSize    string   `bson:"engine_size,omitempty" json:"engine_size,omitempty"`
-	GearboxSpeeds string   `bson:"gearbox_speeds,omitempty" json:"gearbox_speeds,omitempty"`
-	Transmission  string   `bson:"transmission,omitempty" json:"transmission,omitempty"`
-	FuelType      string   `bson:"fuel_type,omitempty" json:"fuel_type,omitempty"`
-	BodyType      string   `bson:"body_type,omitempty" json:"body_type,omitempty"`
-	MkNumber      []string `bson:"mk_number,omitempty" json:"mk_number,omitempty"`
-	Years         []string `bson:"years,omitempty" json:"years,omitempty"`
-	Compatibility string   `bson:"compatibility,omitempty" json:"compatibility,omitempty"`
+	Make              string   `bson:"make" json:"make"`
+	Model             string   `bson:"model" json:"model"`
+	Variant           string   `bson:"variant" json:"variant"`
+	YearStart         string   `bson:"year_start,omitempty" json:"year_start,omitempty"`
+	YearEnd           string   `bson:"year_end,omitempty" json:"year_end,omitempty"`
+	ValveSize         string   `bson:"valve_size,omitempty" json:"valve_size,omitempty"`
+	EngineSize        string   `bson:"engine_size,omitempty" json:"engine_size,omitempty"`
+	GearboxSpeeds     string   `bson:"gearbox_speeds,omitempty" json:"gearbox_speeds,omitempty"`
+	Transmission      string   `bson:"transmission,omitempty" json:"transmission,omitempty"`
+	FuelType          string   `bson:"fuel_type,omitempty" json:"fuel_type,omitempty"`
+	BodyType          string   `bson:"body_type,omitempty" json:"body_type,omitempty"`
+	MkNumber          []string `bson:"mk_number,omitempty" json:"mk_number,omitempty"`
+	Years             []string `bson:"years,omitempty" json:"years,omitempty"`
+	Compatibility     string   `bson:"compatibility,omitempty" json:"compatibility,omitempty"`
+	CompatibilityList []string `bson:"compatibility_list" json:"compatibility_list"`
 }
 type PositionInfo struct {
 	ItemPosition string `bson:"item_position,omitempty" json:"item_position"`
