@@ -47,14 +47,14 @@ type MockupInfo struct {
 	MockupBody   string `bson:"mockup_body" json:"mockup_body"`
 }
 type ImgInfo struct {
-	ImgAlt         string `bson:"img_alt" json:"img_alt"`
-	ImgDir         string `bson:"img_dir" json:"img_dir"`
-	ImgShape       string `bson:"img_shape" json:"img_shape"`
-	ImgHeight      int    `bson:"img_height" json:"img_height"`
-	ImgWidth       int    `bson:"img_width" json:"img_width"`
-	ImgAspectRatio string `bson:"img_aspect_ratio" json:"img_aspect_ratio"`
-	ImgColorType   string `bson:"img_color_type" json:"img_color_type"`
-	ImgColorsList  string `bson:"img_colors_list" json:"img_colors_list"`
+	ImgAlt         string   `bson:"img_alt" json:"img_alt"`
+	ImgDir         string   `bson:"img_dir" json:"img_dir"`
+	ImgShape       string   `bson:"img_shape" json:"img_shape"`
+	ImgHeight      int      `bson:"img_height" json:"img_height"`
+	ImgWidth       int      `bson:"img_width" json:"img_width"`
+	ImgAspectRatio string   `bson:"img_aspect_ratio" json:"img_aspect_ratio"`
+	ImgColorType   string   `bson:"img_color_type" json:"img_color_type"`
+	ImgColorsList  []string `bson:"img_colors_list" json:"img_colors_list"`
 }
 type PriceInfo struct {
 	PriceUSD float64 `bson:"price_usd" json:"price_usd"`
