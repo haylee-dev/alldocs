@@ -2,7 +2,6 @@ package tftattoos_ad
 
 import (
 	"encoding/json"
-	"time"
 )
 
 /*==== THE MAIN STRUCT FOR THE MONGO TATTOO IMAGES (FRONTEND) ====*/
@@ -68,7 +67,6 @@ type PriceInfo struct {
 /*==== THE MAIN STRUCT FOR THE MYSQL TATTOO IMAGES (FRONTEND) ====*/
 
 type TattooMysql struct {
-	ID             int             `stbl:"_id" json:"_id"`
 	TableID        int             `stbl:"table_id" json:"table_id"`
 	TattooID       string          `stbl:"tattoo_id" json:"tattoo_id"`
 	TattooUrl      string          `stbl:"tattoo_url" json:"tattoo_url"`
@@ -76,7 +74,7 @@ type TattooMysql struct {
 	ParentTattooID string          `stbl:"parent_tattoo_id" json:"parent_tattoo_id"`
 	CreatorName    string          `stbl:"creator_name" json:"creator_name"`
 	DateCreated    string          `stbl:"date_created" json:"date_created"`
-	DateEntered    time.Time       `stbl:"date_entered" json:"date_entered"`
+	DateEntered    string          `stbl:"date_entered" json:"date_entered"`
 	MockupIs       string          `stbl:"mockup_is" json:"mockup_is"`
 	MockupGender   string          `stbl:"mockup_gender" json:"mockup_gender"`
 	MockupBody     string          `stbl:"mockup_body" json:"mockup_body"`
