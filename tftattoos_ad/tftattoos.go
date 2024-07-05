@@ -72,6 +72,7 @@ type TattooMysql struct {
 	TableID        int             `stbl:"table_id" json:"table_id"`
 	TattooID       string          `stbl:"tattoo_id" json:"tattoo_id"`
 	TattooUrl      string          `stbl:"tattoo_url" json:"tattoo_url"`
+	TattooStatus   string          `stbl:"tattoo_status" json:"tattoo_status"`
 	ParentTattooID string          `stbl:"parent_tattoo_id" json:"parent_tattoo_id"`
 	CreatorName    string          `stbl:"creator_name" json:"creator_name"`
 	DateCreated    string          `stbl:"date_created" json:"date_created"`
