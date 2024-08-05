@@ -1,4 +1,4 @@
-package tfaoriginals_ad
+package tftattoos_ad
 
 import "time"
 
