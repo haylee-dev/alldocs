@@ -12,6 +12,7 @@ type TfaImagesOriginals struct {
 	Status            string    `json:"status"`
 	ImgFileStatus     string    `json:"img_file_status"`
 	ImgArtStyle       string    `json:"img_art_style"`
+	ImgSetsList       string    `json:"img_sets_list"`
 	ImgSubject        string    `json:"img_subject"`
 	ImgSubjectContext string    `json:"img_subject_context"`
 	DateGenerated     string    `json:"date_generated"`
@@ -20,7 +21,7 @@ type TfaImagesOriginals struct {
 	ImgKeywords       string    `json:"img_keywords"`
 	ImgDiscordCDN     string    `json:"img_discord_cdn"`
 	ImgColorType      string    `json:"img_color_type"`
-	ImgColors         string    `json:"img_colors"`
+	ImgColorsList     string    `json:"img_colors_list"`
 	ImgFilename       string    `json:"img_filename"`
 	ImgFilenameCDN    string    `json:"img_filename_cdn"`
 	ImgAspectRatio    string    `json:"img_aspect_ratio"`
