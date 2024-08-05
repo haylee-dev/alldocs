@@ -2,6 +2,7 @@ package tftattoos_ad
 
 import (
 	"encoding/json"
+	"time"
 )
 
 /*==== THE MAIN STRUCT FOR THE MONGO TATTOO IMAGES (FRONTEND) ====*/
@@ -74,7 +75,7 @@ type TattooMysql struct {
 	ParentTattooID string          `stbl:"parent_tattoo_id" json:"parent_tattoo_id"`
 	CreatorName    string          `stbl:"creator_name" json:"creator_name"`
 	DateCreated    string          `stbl:"date_created" json:"date_created"`
-	DateEntered    string          `stbl:"date_entered" json:"date_entered"`
+	DateEntered    time.Time       `gorm:"type:timestamp;default:CURRENT_TIMESTAMP" json:"date_entered"`
 	MockupIs       string          `stbl:"mockup_is" json:"mockup_is"`
 	MockupGender   string          `stbl:"mockup_gender" json:"mockup_gender"`
 	MockupBody     string          `stbl:"mockup_body" json:"mockup_body"`
