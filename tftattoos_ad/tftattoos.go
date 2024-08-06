@@ -87,6 +87,7 @@ type TattooMysql struct {
 	ArtStylesList  json.RawMessage `stbl:"art_styles_list" json:"art_styles_list"`
 	ArtGenre       string          `stbl:"art_genre" json:"art_genre"`
 	PrID           string          `stbl:"pr_id" json:"pr_id"`
+	Prompt         string          `stbl:"prompt" json:"prompt"`
 	Title          string          `stbl:"title" json:"title"`
 	Description    string          `stbl:"description" json:"description"`
 	ImgAlt         string          `stbl:"img_alt" json:"img_alt"`
