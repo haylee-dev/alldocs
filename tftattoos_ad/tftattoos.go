@@ -33,7 +33,8 @@ type ArtInfo struct {
 	ArtGenre      string   `bson:"art_genre" json:"art_genre"`
 }
 type SubjectInfo struct {
-	SubjectsList []string `bson:"subjects" json:"subjects"`
+	SubjectsList   []string `bson:"subjects" json:"subjects"`
+	SubjectContext string   `bson:"subject_context" json:"subject_context"`
 }
 type SetsInfo struct {
 	SetNamesList []string `bson:"set_names" json:"set_names"`
