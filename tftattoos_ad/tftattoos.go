@@ -83,6 +83,7 @@ type TattooMysql struct {
 	ParentName     string          `stbl:"parent_name" json:"parent_name"`
 	CategoryName   string          `stbl:"category_name" json:"category_name"`
 	SubName        string          `stbl:"sub_name" json:"sub_name"`
+	SubjectContext string          `stbl:"subject_context" json:"subject_context"`
 	SubjectsList   json.RawMessage `stbl:"subjects_list" json:"subjects_list"`
 	ArtStylesList  json.RawMessage `stbl:"art_styles_list" json:"art_styles_list"`
 	ArtGenre       string          `stbl:"art_genre" json:"art_genre"`
