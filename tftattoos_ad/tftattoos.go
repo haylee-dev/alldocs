@@ -29,6 +29,7 @@ type TattooMongo struct {
 	PriceInfo   PriceInfo   `bson:"price_info" json:"price_info"`
 }
 type ArtInfo struct {
+	ArtStyle      string   `bson:"art_style" json:"art_style"`
 	ArtStylesList []string `bson:"art_styles" json:"art_styles"`
 	ArtGenre      string   `bson:"art_genre" json:"art_genre"`
 }
@@ -86,6 +87,7 @@ type TattooMysql struct {
 	SubName        string          `stbl:"sub_name" json:"sub_name"`
 	SubjectContext string          `stbl:"subject_context" json:"subject_context"`
 	SubjectsList   json.RawMessage `stbl:"subjects_list" json:"subjects_list"`
+	ArtStyle       string          `stbl:"art_style" json:"art_style"`
 	ArtStylesList  json.RawMessage `stbl:"art_styles_list" json:"art_styles_list"`
 	ArtGenre       string          `stbl:"art_genre" json:"art_genre"`
 	PrID           string          `stbl:"pr_id" json:"pr_id"`
