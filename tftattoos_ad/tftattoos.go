@@ -70,7 +70,6 @@ type PriceInfo struct {
 /*==== THE MAIN STRUCT FOR THE MYSQL TATTOO IMAGES (FRONTEND) ====*/
 
 type TattooMysql struct {
-	TableID        int             `stbl:"table_id" json:"table_id"`
 	TattooID       string          `stbl:"tattoo_id" json:"tattoo_id"`
 	TattooUrl      string          `stbl:"tattoo_url" json:"tattoo_url"`
 	TattooStatus   string          `stbl:"tattoo_status" json:"tattoo_status"`
