@@ -19,6 +19,7 @@ type TattooMongo struct {
 	DateEntered    string `bson:"date_entered" json:"date_entered"`
 	PrID           string `bson:"pr_id" json:"pr_id"`
 	Title          string `bson:"title" json:"title"`
+	TitleLong      string `bson:"title_long" json:"title_long"`
 	Description    string `bson:"description" json:"description"`
 
 	SubjectInfo SubjectInfo `bson:"subject_info" json:"subject_info"`
@@ -92,6 +93,7 @@ type TattooMysql struct {
 	PrID           string          `stbl:"pr_id" json:"pr_id"`
 	Prompt         string          `stbl:"prompt" json:"prompt"`
 	Title          string          `stbl:"title" json:"title"`
+	TitleLong      string          `stbl:"title_long" json:"title_long"`
 	Description    string          `stbl:"description" json:"description"`
 	ImgAlt         string          `stbl:"img_alt" json:"img_alt"`
 	ImgDir         string          `stbl:"img_dir" json:"img_dir"`
