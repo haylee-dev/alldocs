@@ -15,6 +15,7 @@ type TfaImagesOriginals struct {
 	ImgSetsList       string    `gorm:"column:img_sets_list" json:"img_sets_list"`
 	ImgSubject        string    `gorm:"column:img_subject" json:"img_subject"`
 	ImgSubjectContext string    `gorm:"column:img_subject_context" json:"img_subject_context"`
+	ImgSubjectsList   string    `gorm:"column:img_subjects_list" json:"img_subjects_list"`
 	DateGenerated     string    `gorm:"column:date_generated" json:"date_generated"`
 	TimeGenerated     string    `gorm:"column:time_generated" json:"time_generated"`
 	ImgDir            string    `gorm:"column:img_dir" json:"img_dir"`
